@@ -22,10 +22,10 @@ end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
-  holiday_hash[:winter].collect do |holiday, supply|
+  array = holiday_hash[:winter].collect do |holiday, supply|
     supply
   end
-    supply.flatten
+    array.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
